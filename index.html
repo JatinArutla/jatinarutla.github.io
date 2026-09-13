@@ -109,13 +109,32 @@
     .publication { padding-left: 22px; }
     .publication li { padding-left: 4px; }
 
-    .background-list {
+    .awards { padding-left: 22px; }
+    .awards li { padding-left: 4px; }
+
+    .entry-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    .background-list li { margin-bottom: 13px; }
+    .entry {
+      margin-bottom: 28px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-title {
+      margin: 0 0 2px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .entry-detail {
+      margin: 0;
+    }
 
     footer {
       width: min(850px, calc(100% - 40px));
@@ -164,6 +183,42 @@
         onerror="this.hidden=true; this.closest('.profile').classList.add('no-photo')">
     </header>
 
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+
+      <div class="entry-list">
+        <div class="entry">
+          <h3 class="entry-title">
+            <a href="https://www.birmingham.ac.uk/">
+              University of Birmingham
+            </a>
+          </h3>
+          <p class="entry-detail">
+            MSc in Artificial Intelligence and Machine Learning,
+            Distinction, 2022-2023
+          </p>
+          <p class="entry-detail">
+            Advisor: Dr Jianbo Jiao
+          </p>
+        </div>
+
+        <div class="entry">
+          <h3 class="entry-title">
+            <a href="https://www.gitam.edu/">
+              GITAM University
+            </a>
+          </h3>
+          <p class="entry-detail">
+            BTech in Computer Science and Engineering,
+            GPA 9.08/10, 2017-2021
+          </p>
+          <p class="entry-detail">
+            Advisor: Dr Srinivasa Chakravarthy Lade
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section aria-labelledby="research-heading">
       <h2 id="research-heading">Research</h2>
 
@@ -203,16 +258,40 @@
       </ul>
     </section>
 
-    <section aria-labelledby="background-heading">
-      <h2 id="background-heading">Background</h2>
-      <ul class="background-list">
-        <li><strong>Data Scientist</strong>, Fonz Leather Styles Limited (Ashwood Leather), 2023-present.</li>
-        <li><strong>MSc in Artificial Intelligence and Machine Learning</strong>, University of Birmingham, Distinction, 2023.</li>
-        <li><strong>BTech in Computer Science and Engineering</strong>, GITAM University, GPA 9.08/10, 2021.</li>
+    <section aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards</h2>
+      <ul class="awards">
+        <li>
+          University of Birmingham Commonwealth Games Scholarship, 2022
+        </li>
+        <li>
+          GITAM University Merit Scholarship for Academic Excellence, 2017-2021
+        </li>
       </ul>
     </section>
-  </main>
 
-  <footer>Last updated September 2026</footer>
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Work Experience</h2>
+
+      <div class="entry-list">
+        <div class="entry">
+          <h3 class="entry-title">
+            Fonz Leather Styles Limited (Ashwood Leather)
+          </h3>
+          <p class="entry-detail">
+            Data Scientist, December 2023-present
+          </p>
+        </div>
+
+        <div class="entry">
+          <h3 class="entry-title">Evolv Fit</h3>
+          <p class="entry-detail">
+            Data Science Intern, 2022
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <!-- <footer>Last updated September 2026</footer> -->
 </body>
 </html>
